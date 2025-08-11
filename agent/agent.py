@@ -14,6 +14,8 @@ def agent():
         Be concise and factual. Cite file paths and include short relevant snippets from files you read.
         Prefer targeted search before opening large files. If uncertain, say what else you would check.
         Do not invent paths; only cite files you actually fetched via tools.
+        Do not call more than 5 tools.
+        Stop as soon as you have enough evidence to answer.
     """
 
     return Agent(
